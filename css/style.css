@@ -32,6 +32,16 @@ header a{
     font-size: 14px;
 }
 
+header a:hover{
+    border: 3px solid #f1683a;
+    border-width: 0 0 3px 0;
+}
+
+.active{
+    border: 3px solid #f1683a;
+    border-width: 0 0 3px 0;
+}
+
 .carousel{
     width: 100vw;
     height: 100vh;
@@ -94,6 +104,7 @@ header a{
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .carousel .list .item .content button:nth-child(2){
@@ -160,6 +171,7 @@ header a{
     font-size: large;
     transition: .5s;
     z-index: 100;
+    cursor: pointer;
 }
 
 .arrows button:hover{
@@ -290,33 +302,6 @@ header a{
        transform: translateY(-150px);
        filter: blur(20px);
        opacity: 0; 
-    }
-}
-
-/* .carousel.next .arrows button,
-.carousel.prev .arrows button{
-    pointer-events: none;
-} */
-
-.time{
-    width: 0%;
-    height: 5px;
-    background-color: #f1683a;
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
-}
-
-.carousel.next .time,
-.carousel.prev .time{
-    width: 100%;
-    animation: timeRunning 2s linear 1 forwards;
-}
-
-@keyframes timeRunning {
-    to{
-        width: 0;
     }
 }
 
